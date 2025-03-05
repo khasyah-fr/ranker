@@ -10,6 +10,7 @@ services:
       - "2181:2181"
     
   kafka:
+    user: "root"
     image: confluentinc/cp-kafka:latest
     depends_on:
       - zookeeper
@@ -50,7 +51,7 @@ services:
     ports:
       - "5044:5044"
     volumes:
-      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
     depends_on:
       - elasticsearch
   
