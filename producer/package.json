@@ -10,7 +10,7 @@
   "author": "khasyah-fr",
   "license": "ISC",
   "dependencies": {
-    "faker": "^6.6.6",
+    "@faker-js/faker": "^9.5.1",
     "kafka-node": "^5.0.0"
   }
 }
